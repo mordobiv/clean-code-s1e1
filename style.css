@@ -159,12 +159,11 @@ button {
 }
 
 /* Edit Task */
-.input_text {
+.input__edit-task {
   display: none;
 }
 
-.editMode .input_text {
-/* .editMode input[type=text] { */
+.editMode .input__edit-task {
   display: inline-block;
   width: 224px;
 }
