@@ -20,7 +20,7 @@ button {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.eisenhower-matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -31,31 +31,33 @@ button {
   width: 100%;
 }
 
-.aaa .more_inf {
+.eisenhower-matrix .eisenhower-matrix__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa { 
+  .eisenhower-matrix { 
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.matrix-sections {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.new-task__input,
+.task__input-edit,
+.task__name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task__wrapper {
   display: flex;
 }
 
@@ -84,7 +86,7 @@ button {
   text-transform: uppercase;
 }
 
-.input_text {
+.task__input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,7 +99,7 @@ button {
   color: #888;
 }
 
-.input_text:focus {
+.task__input-text:focus {
   color: #333;
 }
 
@@ -107,12 +109,12 @@ button {
   margin: 0 0 20px;
 }
 
-.input__new-task {
+.new-task__input {
   width: 318px;
 }
 
-/* Task list */
-.list-element {
+/* Task Element */
+.task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,52 +124,52 @@ button {
   align-items: center;
 }
 
-.list-element > * {
+.task > * {
   vertical-align: middle;
 }
 
-.completion_checkbox {
+.task__completion {
   margin: 0 10px;
 }
 
-.task-name {
+.task__name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.input__edit-task {
+.task__input-edit {
   width: 226px;
 }
 
 /* change name to img!!!!!!!! */
-.button_delete {
+.task__button-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button_delete:hover {
+.task__button-delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.completed-tasks .task {
+.completed-tasks .task__name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.input__edit-task {
+.task__input-edit {
   display: none;
 }
 
-.editMode .input__edit-task {
+.task_edit-mode .task__input-edit {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .task-name {
+.task_edit-mode .task__name {
   display: none;
 }
