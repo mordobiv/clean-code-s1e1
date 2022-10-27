@@ -76,7 +76,7 @@ button {
 }
 
 /* Heading */
-.task__header {
+.section__header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -104,7 +104,7 @@ button {
 }
 
 /* New Task */
-.new-task__label {
+.new-task__header {
   display: block;
   margin: 0 0 20px;
 }
