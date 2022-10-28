@@ -35,6 +35,11 @@ button {
   font-family: fantasy, cursive;
 }
 
+.eisenhower-matrix__caption {
+  position: relative;
+  bottom: 4px;
+}
+
 @media (max-width:768px) {
 
   .eisenhower-matrix { 
@@ -47,6 +52,10 @@ button {
   display: block;
   width: 500px;
   margin: 0 auto 0;
+}
+
+.new-task {
+  margin-bottom: 16px;
 }
 
 .new-task__input,
@@ -97,6 +106,7 @@ button {
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  box-sizing: border-box;
 }
 
 .task__input-text:focus {
@@ -106,17 +116,18 @@ button {
 /* New Task */
 .new-task__header {
   display: block;
-  margin: 0 0 20px;
+  margin: 12px 0 20px;
 }
 
 .new-task__input {
   width: 318px;
+  box-sizing: border-box;
 }
 
 /* Task Element */
 .task {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 18px 0 19px;
   border-bottom: 1px solid #eee;
 
   display: flex;
@@ -129,7 +140,7 @@ button {
 }
 
 .task__completion {
-  margin: 0 10px;
+  margin: 2px 10px 0;
 }
 
 .task__name {
@@ -147,6 +158,8 @@ button {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
+  position: relative;
+  top: 2px;
 }
 
 .task__button-delete__img:hover {
@@ -167,6 +180,8 @@ button {
 .task_edit-mode .task__input-edit {
   display: inline-block;
   width: 224px;
+  margin-top: 2px;
+  padding-bottom: 2px;
 }
 
 .task_edit-mode .task__name {
